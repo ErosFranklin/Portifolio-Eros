@@ -1,0 +1,169 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --background-color: #0f0e17;
+    --titulo: #fffffe;
+    --textos: #a7a9be;
+    --botoes: #ff8906;
+    --texto-botao: #fffffe;
+    --card-background: #fffffe;
+    --titulo-card:#0f0e17;
+    --card-destaque:#2e2f3e;
+    --card-detalhe:#ff8906;
+    --card-detalhe-texto:#fffffe;
+    --card-detalhe-destque:#e53170;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+   
+    background-color: var(--background-color);
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container-navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.container-navegacao .titulo-menu{
+    color:var(--titulo);
+    font-style: italic;
+    animation:degrade 5s linear infinite;
+    text-shadow: 1px 1px 2px ;
+}
+
+@keyframes degrade{
+    0%{
+        color: var(--titulo);
+    }
+    25%{
+        color: var(--botoes);
+    }
+    50%{
+        color: var(--card-detalhe-destque);
+    }
+    75%{
+        color: var(--card-detalhe);
+    }
+    100%{
+        color: var(--titulo);
+    }
+}
+.container-navegacao .menu .menu-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.container-navegacao .menu .menu-lista li{
+    margin: 0 20px;
+    color: var(--textos);
+    font-size: 18px;
+    font-weight: 500;
+}
+.container-navegacao .menu .menu-lista li a{
+    text-decoration: none;
+    color: var(--textos);
+    transition: all 0.3s ease;
+    font-weight: bolder;
+    transition: .4s ease-in-out;
+}
+.container-navegacao .menu .menu-lista li a:hover{
+    color: var(--botoes);
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container-principal .home-principal {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.container-principal .home-principal .container-descricao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:0px 30px;
+}
+
+.container-principal .home-principal .container-descricao .titulo-principal {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--botoes), var(--card-detalhe-destque), var(--card-detalhe), var(--titulo-card), var(--botoes));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrade-horizontal 5s linear infinite alternate;
+}
+
+@keyframes degrade-horizontal {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+.container-principal .home-principal .container-descricao .descricao-principal{
+    font-size: 1.2rem;
+    color: var(--textos);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.container-principal .home-principal .container-descricao .links{
+    position: relative;
+    list-style: none;
+    display: flex;
+    width: 50%;
+}
+.container-principal .home-principal .container-descricao .links i{
+    padding: 0px 20px;
+    font-size: 1.5rem;
+    color:var(--botoes);
+    text-shadow: 2px 2px 2px var(--card-destaque);
+    transition: .3s ease-in-out;
+    cursor:pointer;
+}
+.container-principal .home-principal .container-descricao .links i:hover{
+    color: var(--card-detalhe-destque);
+    transform: scale(1.2);
+}
+.container-principal .home-principal .foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.container-principal .home-principal .foto img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px var(--card-detalhe-destque);
+    transition: all 0.3s ease-in-out;
+    animation: cor-imagem 5s linear infinite;
+}
+@keyframes cor-imagem {
+    0% {
+        box-shadow: 0px 0px 20px var(--card-detalhe-destque);
+    }
+    50% {
+        box-shadow: 0px 0px 20px var(--botoes);
+    }
+    100% {
+        box-shadow: 0px 0px 20px var(--card-detalhe-destque);
+    }
+}
+

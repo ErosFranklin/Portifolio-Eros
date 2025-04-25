@@ -15,20 +15,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
         dadosProjetos.innerHTML = `
             <div class="projetos">
-                <div class="projeto">
-                    <img src="path/to/image1.jpg" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1.</p>
-                    <span class="tecnologias-usadas"> HTML, CSS, JavaScript</span>
-                    <a href="" target="_blank">Ver projeto</a>
-                </div>
-                <div class="projeto">
-                    <img src="path/to/image2.jpg" alt="Projeto 2">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto 2.</p>
-                </div>
+            <div class="projeto">
+                <img src="path/to/image1.jpg" alt="Projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+                <button class="detalhes-btn" data-nome="Projeto 1" data-descricao="Descrição detalhada do projeto 1." data-tecnologias="HTML, CSS, JavaScript" data-link="https://linkprojeto1.com">Detalhes</button>
+            </div>
+            <div class="projeto">
+                <img src="path/to/image2.jpg" alt="Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+                <button class="detalhes-btn" data-nome="Projeto 2" data-descricao="Descrição detalhada do projeto 2." data-tecnologias="React, Node.js" data-link="https://linkprojeto2.com">Detalhes</button>
+            </div>
             </div>   
         `;
+
+        const detalhesBtns = dadosProjetos.querySelectorAll('.detalhes-btn');
+        detalhesBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+            const nome = btn.getAttribute('data-nome');
+            const descricao = btn.getAttribute('data-descricao');
+            const tecnologias = btn.getAttribute('data-tecnologias');
+            const link = btn.getAttribute('data-link');
+            modalProjeto(nome, descricao, tecnologias, link);
+            });
+        });
 
         containerPortifolio.appendChild(dadosProjetos);
     });
@@ -75,6 +86,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
         containerPortifolio.appendChild(dadosTecnologias);
     });
+
+    function modalProjeto(nomeProjeto, descricao, tecnologias, link) {
+        const modal = document.createElement('div');
+        modal.classList.add('modal-projeto');
+        modal.innerHTML = `
+            <div class="modal-conteudo">
+                <h3>${nomeProjeto}</h3>
+                <p>${descricao}</p>
+                <span class="tecnologias-usadas">${tecnologias}</span>
+                <a href="${link}" target="_blank">Ver projeto</a>
+                <button class="fechar-modal">Fechar</button>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        const fecharModal = modal.querySelector('.fechar-modal');
+        fecharModal.addEventListener('click', function() {
+            document.body.removeChild(modal);
+        });
+    }
+    const projeto1 = document.querySelector('.projeto:nth-child(1)');
 
 
 
