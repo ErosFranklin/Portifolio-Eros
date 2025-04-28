@@ -14,9 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         dadosProjetos.innerHTML = `
-            <div class="projetos">
             <div class="projeto">
-                <img src="path/to/image1.jpg" alt="Projeto 1">
+                <img src="../public/image/perfil.jpg" alt="Projeto 1">
                 <h3>Projeto 1</h3>
                 <p>Descrição do projeto 1.</p>
                 <button class="detalhes-btn" data-nome="Projeto 1" data-descricao="Descrição detalhada do projeto 1." data-tecnologias="HTML, CSS, JavaScript" data-link="https://linkprojeto1.com">Detalhes</button>
@@ -26,8 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3>Projeto 2</h3>
                 <p>Descrição do projeto 2.</p>
                 <button class="detalhes-btn" data-nome="Projeto 2" data-descricao="Descrição detalhada do projeto 2." data-tecnologias="React, Node.js" data-link="https://linkprojeto2.com">Detalhes</button>
-            </div>
-            </div>   
+            </div> 
+            <div class="projeto">
+                <img src="path/to/image3.jpg" alt="Projeto 2">
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto 3.</p>
+                <button class="detalhes-btn" data-nome="Projeto 3" data-descricao="Descrição detalhada do projeto 2." data-tecnologias="React, Node.js" data-link="https://linkprojeto2.com">Detalhes</button>
+            </div> 
         `;
 
         const detalhesBtns = dadosProjetos.querySelectorAll('.detalhes-btn');
