@@ -112,38 +112,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
         dadosTecnologias.innerHTML = `
             <div class="tecnologias">
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-html5"></i>
+                    <span class="tecnologia-texto">HTML</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-css3"></i>
+                    <span class="tecnologia-texto">CSS</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-java"></i>
+                    <span class="tecnologia-texto">Java</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-js"></i>
+                    <span class="tecnologia-texto">JavaScript</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-node"></i>
+                    <span class="tecnologia-texto">Node.js</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-react"></i>
+                    <span class="tecnologia-texto">React</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-figma"></i>
+                    <span class="tecnologia-texto">Figma</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-brands fa-github"></i>
+                    <span class="tecnologia-texto">GitHub</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span class="tecnologia-texto">Git</span>
+                </div>
+                <div class="tecnologia tooltip">
                     <i class="fa-solid fa-code"></i>
+                    <span class="tecnologia-texto">VS Code</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-solid fa-c">++</i>
+                    <span class="tecnologia-texto">C++</span>
                 </div>
-                <div class="tecnologia">
+                <div class="tecnologia tooltip">
                     <i class="fa-solid fa-c"></i>
+                    <span class="tecnologia-texto">C</span>
+                </div>
+                <div class="tecnologia tooltip">
+                    <i class="fa-brands fa-jira"></i>
+                    <span class="tecnologia-texto">Jira</span>
                 </div>
             </div>   
         `;
