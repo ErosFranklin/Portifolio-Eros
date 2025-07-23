@@ -32,6 +32,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>O Life Fit Boosted é uma aplicação web completa desenvolvida para ajudar pessoas a monitorarem seus treinos de musculação e dietas de forma eficiente e intuitiva. Nossa missão é tornar o processo de acompanhamento fitness mais simples, permitindo que você se concentre no que realmente importa: seus resultados.</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Life Fit Boosted'}&link=${'https://github.com/ErosFranklin/LIFE-FIT-BOOSTED'}&descricao=${'O Life Fit Boosted é uma aplicação web completa desenvolvida para ajudar pessoas a monitorarem seus treinos de musculação e dietas de forma eficiente e intuitiva. Nossa missão é tornar o processo de acompanhamento fitness mais simples, permitindo que você se concentre no que realmente importa: seus resultados.'}">Detalhes</a></button>
             </div> 
+            <div class="projeto">
+                <img src="../public/image/logo_funcionalize.png" alt="Projeto 2">
+                <h3>Funcionalize</h3>
+                <p>Funcionalize é uma aplicação web desenvolvida para ajudar no gerenciamento de funcionários, facilitando a comunicação e a organização das tarefas diárias.</p>
+                <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Funcionalize'}&link=${'https://github.com/ErosFranklin/Funcionalize'}&descricao=${'Funcionalize é uma aplicação web desenvolvida para ajudar no gerenciamento de funcionários, facilitando a comunicação e a organização das tarefas diárias.'}">Detalhes</a></button>
+            </div> 
+            <div class="projeto">
+                <img src="../public/image/SMAAS-rlogo.png" alt="Projeto 2">
+                <h3>SMASS</h3>
+                <p>SMASS é uma aplicação web desenvolvida para monitorar as atividades dos agentes de saúde de uma cidade</p>
+                <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'SMASS'}&link=${'https://github.com/ErosFranklin/Projeto_MAP'}&descricao=${'SMASS é uma aplicação web desenvolvida para monitorar as atividades dos agentes de saúde de uma cidade.'}">Detalhes</a></button>
+            </div> 
+            <div class="projeto">
+                <img src="../public/image/logo_bj.png" alt="Projeto 2">
+                <h3>Black Jack</h3>
+                <p>Black Jack é uma aplicação web desenvolvida para que os usuarios consigam jogar Black Jack ou o famoso 21</p>
+                <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e TypeScript'}&nome=${'Black Jack'}&link=${'https://github.com/ErosFranklin/Black-Jack'}&descricao=${'Black Jack é uma aplicação web desenvolvida para que os usuarios consigam jogar Black Jack ou o famoso 21.'}">Detalhes</a></button>
+            </div> 
         `;
 
         const detalhesBtns = dadosProjetos.querySelectorAll('.detalhes-btn');
@@ -58,10 +76,25 @@ document.addEventListener('DOMContentLoaded', function() {
         dadosCertificados.innerHTML = `
             <div class="certificados">
                 <div class="certificado">
-                    <img src="path/to/image1.jpg" alt="Projeto 1">
+                    <img src="certificados/thumbnail/cap_certificado_ministrante.png" alt="Certificado HTML">
                 </div>
                 <div class="certificado">
-                    <img src="path/to/image2.jpg" alt="Projeto 2">
+                    <img src="certificados/thumbnail/cap_certificado_premiacao.png" alt="Certificado HTML">
+                </div>
+                <div class="certificado">
+                    <img src="certificados/thumbnail/cap_certificado_semana0_iv.png" alt="Certificado HTML">
+                </div>
+                <div class="certificado">
+                    <img src="certificados/thumbnail/cap_certificado_semana0_vi.png" alt="Certificado HTML">
+                </div>
+                 <div class="certificado">
+                    <img src="certificados/thumbnail/cap_certificado_semana0_vii.png" alt="Certificado HTML">
+                </div>
+                <div class="certificado">
+                    <img src="certificados/thumbnail/cap_certificado_semana0_viii.png" alt="Certificado HTML">
+                </div>
+                <div class="certificado">
+                    <img src="certificados/thumbnail/cap_sercomp_v_artigo.png" alt="Certificado HTML">
                 </div>
             </div>   
         `;
@@ -80,10 +113,37 @@ document.addEventListener('DOMContentLoaded', function() {
         dadosTecnologias.innerHTML = `
             <div class="tecnologias">
                 <div class="tecnologia">
-                    <img src="path/to/image1.jpg" alt="Tecnologia 1">
+                    <i class="fa-brands fa-html5"></i>
                 </div>
                 <div class="tecnologia">
-                    <img src="path/to/image2.jpg" alt="Tecnologia 2">
+                    <i class="fa-brands fa-css3"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-node"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-solid fa-c">++</i>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-solid fa-c"></i>
                 </div>
             </div>   
         `;

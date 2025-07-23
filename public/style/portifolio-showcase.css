@@ -114,7 +114,7 @@
 }
 .dados-portifolio .container-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px; /* Adjusted for better spacing */
     width: 100%;
     background-color: transparent; /* Removed red background for better styling */
@@ -131,7 +131,7 @@
     background-color: var(--card-destaque);
 }
 .dados-portifolio .container-projetos .projeto img{
-    width: 250px ;
+    width: 20rem ;
     border-radius:15px;
     margin:5px;
     height: auto;
@@ -175,4 +175,67 @@
     text-decoration: none;
     color: var(--texto-botao);
     font-weight: bolder;
+}
+
+.container-certificados{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    min-height: 100vh;
+}
+.container-certificados .certificados{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 100%;
+    background-color: transparent; 
+}
+.container-certificados .certificados .certificado{
+    border: 1px solid var(--card-detalhe);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--card-destaque);
+}
+.container-certificados .certificados .certificado img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.container-certificados .certificados .certificado img:hover {
+  transform: scale(1.05);
+}
+
+.container-tecnlogias{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    min-height: 100vh;
+}
+.container-tecnlogias .tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 100%;
+    background-color: transparent; 
+}
+
+.container-tecnlogias .tecnologias .tecnologia{
+    border: 1px solid var(--card-detalhe);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--card-destaque);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-tecnlogias .tecnologias .tecnologia i {
+  font-size:8rem;
+  color:#ff8906;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+    
 }

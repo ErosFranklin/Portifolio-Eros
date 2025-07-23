@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const tecnologias = parametros.get('tecnologias');
     const link = parametros.get('link');
 
-    console.log(nome);        // "Screenning Programming"
-    console.log(descricao);   // ""
-    console.log(tecnologias); // "HTML, CSS e JavaScript"
+    console.log(nome);       
+    console.log(descricao);  
+    console.log(tecnologias); 
     console.log(link);
 
     nomeProjeto.textContent = nome || 'Nome do Projeto';
