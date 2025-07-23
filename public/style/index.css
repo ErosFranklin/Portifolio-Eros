@@ -96,7 +96,15 @@ body{
     flex-direction: column;
     padding:0px 30px;
 }
-
+.container-principal .home-principal .container-descricao .texto-destaque{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--botoes), var(--card-detalhe-destque), var(--card-detalhe), var(--titulo-card), var(--botoes));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrade-horizontal 5s linear infinite alternate;
+}
 .container-principal .home-principal .container-descricao .titulo-principal {
     font-size: 2rem;
     font-weight: bolder;
