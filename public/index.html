@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/style/index.css">
     <link rel="stylesheet" href="../public/style/portifolio-showcase.css">
+    <link rel="stylesheet" href="../public/style/rodape.css">
+    <link rel="stylesheet" href="../">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
@@ -13,9 +15,9 @@
         <h2 class="titulo-menu">Eros Franklin</h2>
         <nav class="menu">
             <ul class="menu-lista">
-                <li><a href="index.html">Sobre</a></li>
-                <li><a href="#portifolio-showcase">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Sobre <i class="fa-solid fa-comments"></i></a></li>
+                <li><a href="#portifolio-showcase">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#rodape-container">Contato <i class="fa-solid fa-headset"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -26,16 +28,16 @@
                     <h1 class="titulo-principal">Olá, eu sou Eros Franklin</h1>
                     <p class="descricao-principal">Sou desenvolvedor <span class="texto-destaque">Full-Stack</span>, apaixonado por tecnologia e soluções criativas. Busco constantemente novos desafios que me permitam crescer profissionalmente e ampliar minhas habilidades em desenvolvimento web e de software. Tenho experiência tanto no front-end quanto no back-end, e estou sempre aberto a aprender, colaborar e construir projetos que façam a diferença.</p>
                     <p class="descricao-principal">
-                        Tenho experiência com diversas tecnologias e ferramentas, incluindo <span class="texto-destaque"></span>JavaScript</span>, <span class="texto-destaque">HTML</span>, <span class="texto-destaque">CSS</span>, <span class="texto-destaque">Node.js</span>, <span class="texto-destaque">React</span>, entre outras listadas abaixo.
+                        Tenho experiência com diversas tecnologias e ferramentas, incluindo <span class="texto-destaque">JavaScript</span>, <span class="texto-destaque">HTML</span>, <span class="texto-destaque">CSS</span>, <span class="texto-destaque">Node.js</span>, <span class="texto-destaque">React</span>, entre outras listadas abaixo.
                     </p>
                     <p class="descricao-principal">
                         Também aplico metodologias ágeis, como o <span class="texto-destaque">Scrum</span>, em ferramentas como <span class="texto-destaque">Jira</span> e <span class="texto-destaque">GitHub Projects</span>. Além disso, utilizo <span class="texto-destaque">GitFlow</span> e sigo os princípios do <span class="texto-destaque">Clean Code</span> para manter a qualidade e organização do código.
                     </p>
 
                     <ul class="links">
-                        <li><i class="fa-brands fa-github"></i></li>
-                        <li><i class="fa-solid fa-address-book"></i></li>
-                        <li><i class="fa-solid fa-id-card-clip"></i></li>
+                        <li><a href="https://github.com/ErosFranklin"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="www.linkedin.com/in/eros-franklin-soares-felix-3429b033a"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="../public/certificados/Currículo (2025).pdf"  download="Meu_Curriculo.pdf"><i class="fa-solid fa-id-card-clip"></i></a></li>
                     </ul>
                 </div>
                 <div class="foto">
@@ -60,9 +62,32 @@
             </section>
         </div>
     </main>
-    <footer class="rodape">
-
+    <div class="rodape-container" id="rodape-container">
+        <footer class="rodape">
+        <div class="contatos">
+            <h2 class="titulo">Contatos</h2>
+            <ul class="contato">
+                <li><i class="fa-solid fa-location-dot"></i> Catingueira, PB</li>
+                <li><i class="fa-solid fa-phone"></i> +55 (83) 99940-6304</li>
+                <li><i class="fa-solid fa-envelope"></i> erosfranklinfelix2016@gmail.com</li>
+            </ul>
+        </div>
+        <div class="paginas">
+            <h2 class="titulo">Acesso Rápido</h2>
+            <ul class="pagina">
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="#portifolio-showcase">Home</a></li>
+                <li><a href="#rodape-container">Contato</a></li>
+            </ul>
+        </div>
+        <div class="sobre">
+             <h2 class="titulo">EF</h2>
+            <p>&copy;2025 Eros Franklin — Desenvolvedor Web.</p>
+            <p>Todos os direitos reservados</p>
+        </div>
     </footer>
+    </div>
+    
     <script src="../public/javascript/portifolio-dinamico.js"></script>
 </body>
 </html>

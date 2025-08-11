@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --background-color: #0f0e17;
+    --titulo: #fffffe;
+    --textos: #a7a9be;
+    --botoes: #ff8906;
+    --texto-botao: #fffffe;
+    --card-background: #fffffe;
+    --titulo-card:#0f0e17;
+    --card-destaque:#2e2f3e;
+    --card-detalhe:#ff8906;
+    --card-detalhe-texto:#fffffe;
+    --card-detalhe-destque:#e53170;
+}
+.rodape-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top:5%;
+    padding:20px;
+    background-color: var(--card-destaque);
+    box-shadow: 0px -5px 5px var(--card-detalhe);
+}
+.rodape{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    height: auto;
+    color: var(--titulo);
+    text-align: center;
+    padding: 20px 0px;
+}
+.rodape .contatos, .rodape .paginas{
+    display:flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+}
+.rodape .contatos .contato{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    text-align: justify;
+    list-style: none;
+}
+.rodape .paginas .pagina{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    text-align: justify;
+    list-style: none;
+}
+.rodape .paginas .pagina li a{
+    text-decoration: none;
+    color:var(--card-background);
+    transition: color 0.2s ease;
+}
+
+.rodape .paginas .pagina li a:hover{
+    color: var(--card-detalhe-destque);
+    transform: scale(1.2);
+}

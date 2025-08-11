@@ -96,6 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="certificado">
                     <img src="certificados/thumbnail/cap_sercomp_v_artigo.png" alt="Certificado HTML">
                 </div>
+                <div class="certificado">
+                    <img src="certificados/thumbnail/cap_certificado_ifpb.png" alt="Certificado HTML">
+                </div>
             </div>   
         `;
 
@@ -136,6 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <i class="fa-brands fa-react"></i>
                     <span class="tecnologia-texto">React</span>
                 </div>
+                <div class="tecnologia tooltip">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <span class="tecnologia-texto">WordPress</span>
+                </div>
+                
                 <div class="tecnologia tooltip">
                     <i class="fa-brands fa-figma"></i>
                     <span class="tecnologia-texto">Figma</span>
