@@ -169,6 +169,7 @@
     cursor:pointer;
 }
 .dados-portifolio .container-projetos .projeto button:hover{
+    scale: 1.1;
     color: var(--card-detalhe-texto);
     box-shadow: 0px 0px 5px var(--card-detalhe-texto);
 }
@@ -192,9 +193,12 @@
     background-color: transparent; 
 }
 .container-certificados .certificados .certificado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     border: 1px solid var(--card-detalhe);
     border-radius: 10px;
-    padding: 10px;
     background-color: var(--card-destaque);
 }
 .container-certificados .certificados .certificado img {
