@@ -56,10 +56,18 @@ body{
         color: var(--titulo);
     }
 }
+.container-navegacao #burguer{
+    display: none;
+}
+.container-navegacao .menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px;
+}
 .container-navegacao .menu .menu-lista{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 .container-navegacao .menu .menu-lista li{
