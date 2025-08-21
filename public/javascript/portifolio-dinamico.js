@@ -15,37 +15,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
         dadosProjetos.innerHTML = `
             <div class="projeto">
-                <img src="../public/image/logoSC.png" alt="Projeto 1">
+                <img src="../image/logoSC.png" alt="Projeto 1">
                 <h3>Screenning Programming</h3>
                 <p>Screenning Programming é um sistema web que tem como objetivo fornecer apoio aos educadores de cursos superiores e técnicos da área de informática a mensurar habilidades cognitivas preditoras de programação.</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Screenning Programming'}&link=${'https://github.com/ErosFranklin/ScreenningProgramming2024'}&descricao=${'Screenning Programming é um sistema web que tem como objetivo fornecer apoio aos educadores de cursos superiores e técnicos da área de informática a mensurar habilidades cognitivas preditoras de programação.'}">Detalhes</a></button>
             </div>
             <div class="projeto">
-                <img src="../public/image/logo.png" alt="Projeto 2">
+                <img src="../image/logo.png" alt="Projeto 2">
                 <h3>Staff Com</h3>
                 <p>Este projeto é uma plataforma WEB que envolve a criação de uma aplicação de automação de comandas, além de fornecer gerenciamento de funcionários, deixando o uso de métodos manuais para uma aplicação informatizada. A aplicação ainda está em seu estado inicial de desenvolvimento. O sistema contará com frontend, backend e banco de dados integrados.</p>
                  <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Staff Com'}&link=${'https://github.com/ErosFranklin/StaffCom'}&descricao=${'Este projeto é uma plataforma WEB que envolve a criação de uma aplicação de automação de comandas, além de fornecer gerenciamento de funcionários, deixando o uso de métodos manuais para uma aplicação informatizada. A aplicação ainda está em seu estado inicial de desenvolvimento. O sistema contará com frontend, backend e banco de dados integrados.'}">Detalhes</a></button>
             </div> 
             <div class="projeto">
-                <img src="../public/image/logo-0-name.png" alt="Projeto 2">
+                <img src="../image/logo-0-name.png" alt="Projeto 2">
                 <h3>Life Fit Boosted</h3>
                 <p>O Life Fit Boosted é uma aplicação web completa desenvolvida para ajudar pessoas a monitorarem seus treinos de musculação e dietas de forma eficiente e intuitiva. Nossa missão é tornar o processo de acompanhamento fitness mais simples, permitindo que você se concentre no que realmente importa: seus resultados.</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Life Fit Boosted'}&link=${'https://github.com/ErosFranklin/LIFE-FIT-BOOSTED'}&descricao=${'O Life Fit Boosted é uma aplicação web completa desenvolvida para ajudar pessoas a monitorarem seus treinos de musculação e dietas de forma eficiente e intuitiva. Nossa missão é tornar o processo de acompanhamento fitness mais simples, permitindo que você se concentre no que realmente importa: seus resultados.'}">Detalhes</a></button>
             </div> 
             <div class="projeto">
-                <img src="../public/image/logo_funcionalize.png" alt="Projeto 2">
+                <img src="../image/logo_funcionalize.png" alt="Projeto 2">
                 <h3>Funcionalize</h3>
                 <p>Funcionalize é uma aplicação web desenvolvida para ajudar no gerenciamento de funcionários, facilitando a comunicação e a organização das tarefas diárias.</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'Funcionalize'}&link=${'https://github.com/ErosFranklin/Funcionalize'}&descricao=${'Funcionalize é uma aplicação web desenvolvida para ajudar no gerenciamento de funcionários, facilitando a comunicação e a organização das tarefas diárias.'}">Detalhes</a></button>
             </div> 
             <div class="projeto">
-                <img src="../public/image/SMAAS-rlogo.png" alt="Projeto 2">
+                <img src="../image/SMAAS-rlogo.png" alt="Projeto 2">
                 <h3>SMASS</h3>
                 <p>SMASS é uma aplicação web desenvolvida para monitorar as atividades dos agentes de saúde de uma cidade</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e JavaScript'}&nome=${'SMASS'}&link=${'https://github.com/ErosFranklin/Projeto_MAP'}&descricao=${'SMASS é uma aplicação web desenvolvida para monitorar as atividades dos agentes de saúde de uma cidade.'}">Detalhes</a></button>
             </div> 
             <div class="projeto">
-                <img src="../public/image/logo_bj.png" alt="Projeto 2">
+                <img src="../image/logo_bj.png" alt="Projeto 2">
                 <h3>Black Jack</h3>
                 <p>Black Jack é uma aplicação web desenvolvida para que os usuarios consigam jogar Black Jack ou o famoso 21</p>
                 <button class="detalhes-btn"><a href="../public/views/projeto.html?tecnologias=${'HTML, CSS e TypeScript'}&nome=${'Black Jack'}&link=${'https://github.com/ErosFranklin/Black-Jack'}&descricao=${'Black Jack é uma aplicação web desenvolvida para que os usuarios consigam jogar Black Jack ou o famoso 21.'}">Detalhes</a></button>
